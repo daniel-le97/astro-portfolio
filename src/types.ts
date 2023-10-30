@@ -1,4 +1,4 @@
-export interface CompatibilityItem {
+export interface SkillItem {
   icon: string;
   title: string;
   url: string;
