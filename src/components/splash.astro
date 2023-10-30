@@ -18,15 +18,10 @@ const navItems: Array<NavItem> = [
 
 <section class="relative h-full">
   <div class="video-container absolute z-50 flex justify-center">
-    <video
-      src="../../src/assets/spacemanFull.mp4"
-      width="200"
-      height="1004"
-      object-fit="cover"
-      loop
-      muted
-      autoplay
-      class="object-fit"></video>
+    <video width="200" height="1004" preload="true" loop muted autoplay playsinline class="object-fit">
+      <source src="../../src/assets/spacemanFull.mp4" type="video/mp4">
+      <!-- Add additional sources here for other formats, e.g., WebM, Ogg -->
+    </video>
 
     <GitHubCorner />
 
