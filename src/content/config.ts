@@ -19,14 +19,13 @@ const posts = defineCollection({
     author: z.string(),
     image: z.object({
       url: z.string(),
-      alt: z.string()
+      alt: z.string(),
     }),
-    tags: z.array(z.string())
-  })
+    tags: z.array(z.string()),
+  }),
 });
-
 
 export const collections = {
   showcase,
-  posts
+  posts,
 };
