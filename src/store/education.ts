@@ -15,10 +15,10 @@ export const education = [
     ],
   },
   {
-    date: "JAN - MAR 2023",
-    title: "RiaFox",
+    date: "JAN - AUG 2023",
+    title: "Devopportunities LLC",
     description:
-      "Graduated  in the top 1% of the cohort for a full-stack development bootcamp, learned CSS,HTML,Javascript fundamentals, DOM manipulations, Props, Building and intergrating REST APIs",
+      "Co-founded software development company that creates websites, user interfaces, applications, servers and overall Infrastucture to support small to medium teams",
     link: "https://boisecodeworks.com/",
     tech: ["Angular", "TypeScript", "ClickUp", "HTML", "CSS", "Nest"],
   },
@@ -26,7 +26,7 @@ export const education = [
     date: "AUG - NOV 2022",
     title: "Boise CodeWorks",
     description:
-      "Graduated  in the top 1% of the cohort for a full-stack development bootcamp, learned CSS,HTML,Javascript fundamentals, DOM manipulations, Props, Building and intergrating REST APIs",
+      "Fullstack software development bootcamp that teaches CSS, HTML, Javascript, C#, dotnet, building and intergrating REST APIs",
     link: "https://boisecodeworks.com/",
     tech: [
       "CSS",
