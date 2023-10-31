@@ -1,10 +1,12 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    // Alias `src` to `~`
-    "baseUrl": ".",
+    "baseUrl": "C:/source/leProjects/daniel-astro-portfolio",
     "paths": {
-      "~/*": ["src/*"]
-    }
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "jsx": "preserve"
   }
 }
