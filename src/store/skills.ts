@@ -1,4 +1,9 @@
-export const skillsIcons = [
+import { reactive } from "vue";
+
+export const skillsStore = reactive<{
+  title:string
+  src:string,
+  type?:string}[]>([
   {
     title: "HTML5",
     src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
@@ -114,4 +119,4 @@ export const skillsIcons = [
     title: "Trello",
     src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
   },
-];
+])
