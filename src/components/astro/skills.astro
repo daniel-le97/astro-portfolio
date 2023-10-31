@@ -5,8 +5,7 @@ import ContentSection from "~/components/astro/content-section.astro";
 import type { SkillItem } from "~/types";
 import coolify from "../icons/platforms/coolify.png";
 import Icon from "astro-icon";
-import SkillsCompoent from '~/components/vue/Skills.vue'
-
+import SkillsCompoent from "~/components/vue/Skills.vue";
 
 const frameworks = [
   {
@@ -45,17 +44,17 @@ let skillsIcons = [
   {
     title: "HTML5",
     src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "CSS3",
     src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "JavaScript ES6",
     src: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "C-Sharp",
@@ -72,17 +71,17 @@ let skillsIcons = [
   {
     title: "Vue.js 3",
     src: "https://imgs.search.brave.com/Hsy3vsixUOO8EgH22as2LpgNP6zF5hEx6P-pDoc0n0c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kMzN3/dWJyZmtpMGw2OC5j/bG91ZGZyb250Lm5l/dC83MThjNmU0ODk1/NjI0OTEyMWNmM2Nj/YTFhMjJhOTlmODM3/MmEzZjBkLzVmNjg5/L19udXh0L2ltZy9j/MmE2MDVmLnBuZw",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "Svelte",
     src: "https://imgs.search.brave.com/AtFnftxXfySR-pIt0LrD64jshxNlrFjMfr9etQbLNAU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9zdmVsdGUtaWNv/bi5zdmc.svg",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "React",
     src: "https://imgs.search.brave.com/qlFAtMUjOJ06EBhykDOXGUrmQ4UM2GdOmNiPAzXjS5w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDkvUmVhY3Rf/bG9nb19sb2dvdHlw/ZV9lbWJsZW0tNzAw/eDYyNi5wbmc",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "Next.js",
@@ -96,22 +95,22 @@ let skillsIcons = [
   {
     title: "BootStrap",
     src: "https://pluspng.com/img-png/bootstrap-logo-vector-png-bem-with-bootstrap-bootstrap-logo-1024.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "TailWind CSS",
     src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "Sass",
     src: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
-    type: 'front-end'
+    type: "front-end",
   },
   {
     title: "MongoDb",
     src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
-    type: 'back-end'
+    type: "back-end",
   },
 
   {
@@ -177,9 +176,8 @@ let skillsIcons = [
         </div>
       </h3> -->
 
-      
-        <SkillsCompoent client:load/>
-        <!-- {
+  <SkillsCompoent client:load />
+  <!-- {
           skillsIcons.map((item) => (
             <li>
               <div class="flex flex-col items-center gap-2">
@@ -190,7 +188,7 @@ let skillsIcons = [
             </li>
           ))
         } -->
-    <!-- </div> -->
+  <!-- </div> -->
   <!-- </div> -->
 
   <!-- <div class="w-full max-w-6xl space-y-2">

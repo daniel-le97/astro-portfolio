@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind(), vue()],
   vite: {
     ssr: {
-      external: ["svgo"]
-    }
-  }
+      external: ["svgo"],
+    },
+  },
 });

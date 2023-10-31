@@ -6,20 +6,17 @@ import type { FeatureItem } from "~/types";
 const features: Array<FeatureItem> = [
   {
     title: "Juijitsu",
-    description:
-      "",
+    description: "",
     icon: "mdi:kabaddi",
   },
   {
     title: "Software Developing",
-    description:
-      "",
+    description: "",
     icon: "mdi:laptop",
   },
   {
     title: "Pets",
-    description:
-      "",
+    description: "",
     icon: "mdi:cat",
   },
   // {
@@ -44,10 +41,7 @@ const features: Array<FeatureItem> = [
 ---
 
 <ContentSection title="Passions" id="passions">
-  <Fragment slot="lead">
-    
-  
-  </Fragment>
+  <Fragment slot="lead"></Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
       features.map(({ title, description, icon }) => (

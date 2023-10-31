@@ -1,220 +1,27 @@
 ---
-import { Image } from "astro:assets";
-import CompatibilityList from "~/components/astro/skills-list.astro";
 import ContentSection from "~/components/astro/content-section.astro";
-import type { SkillItem } from "~/types";
-import coolify from "../icons/platforms/coolify.png";
-import Icon from "astro-icon";
-
-
-
-	const dataSet =[
-				 {
-		date: 'APRIL - NOV 2023',
-		title: '1901Group',
-		description:
-			'Served as an Information Technology Specialist, handled User account administration, Asset Management and Software installation across US Navy Active Directory. Troubleshooted asset, software, and hardware issues and provided remote user assistance as well as remote desktop assistance.',
-		link: 'https://boisecodeworks.com/',
-		tech: [
-			'Command Line',
-			'Powershell',
-			'Active Directory',
-			'Microsoft 365 Products',
-			"Virtual Machines",
-			"Microsoft Endpoint Configuration Manager(MECM) ",
-		]
-	},
-		 {
-		date: 'JAN - MAR 2023',
-		title: 'RiaFox',
-		description:
-			'Graduated  in the top 1% of the cohort for a full-stack development bootcamp, learned CSS,HTML,Javascript fundamentals, DOM manipulations, Props, Building and intergrating REST APIs',
-		link: 'https://boisecodeworks.com/',
-		tech: [
-			'Angular',
-			'TypeScript',
-			'ClickUp',
-			'HTML',
-			"CSS",
-			"Nest",
-		]
-	},
-		 {
-		date: 'AUG - NOV 2022',
-		title: 'Boise CodeWorks',
-		description:
-			'Graduated  in the top 1% of the cohort for a full-stack development bootcamp, learned CSS,HTML,Javascript fundamentals, DOM manipulations, Props, Building and intergrating REST APIs',
-		link: 'https://boisecodeworks.com/',
-		tech: [
-			'CSS',
-			'HTML',
-			'JavaScript',
-			'C#',
-			'MySQL',
-			'Vue',
-			'NetCore',
-			'BootStrap',
-			'MondoDB',
-			'Auth0'
-		]
-	},
-	];
-
-
-
-
-
-
-
-
-
-
-
-
+import { education } from "../../store/education.ts";
 ---
 
 <ContentSection title="Experience" id="experience">
-
-
-<div class="px-28">
-  <ol class="relative border-l border-gray-200 dark:border-gray-700">   
-  
-  
-{dataSet.map(data =>{
-
-
-return( <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{data.date}</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{data.title}</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get {data.description}</p>
-       
-    </li>
-
-)
-
-
-})}
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg></a>
-    </li>
-    <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-    </li>
-    <li class="ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-    </li> -->
-</ol>
-
-</div>
-
-
-
-
-  <!-- <div class="flex w-full">
-    <div class="w-1/2 max-w-6xl space-y-2">
-      <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-        <h3
-          class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs"
-        >
-          <div class="badge-container">
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >Enterprise IT Specialist</span
-            >
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >1901Group- Contracted under Dexian, April 2023 - November 2023</span
-            >
-          </div>
-        </h3>
-        <div class="">
-          Served as an Information Technology Specialist, handled User account
-          administration, Asset Management and Software installation across US
-          Navy Active Directory. Troubleshooted asset, software, and hardware
-          issues and provided remote user assistance as well as remote desktop
-          assistance.
-        </div>
-      </div>
-    </div>
+  <div class="px-28">
+    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+      {
+        education.map((data) => (
+          <li class="mb-10 ml-4">
+            <div class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700" />
+            <time class="mb-1 font-normal leading-none text-gray-400 text-sm dark:text-gray-500">
+              {data.date}
+            </time>
+            <h3 class="font-semibold text-gray-900 text-lg dark:text-white">
+              {data.title}
+            </h3>
+            <p class="mb-4 font-normal text-gray-500 text-base dark:text-gray-400">
+              {data.description}
+            </p>
+          </li>
+        ))
+      }
+    </ol>
   </div>
-
-  <div class="flex w-full justify-end">
-    <div class="w-1/2 max-w-6xl space-y-2">
-      <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-        <h3
-          class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs"
-        >
-          <div class="badge-container">
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >Enterprise IT Specialist</span
-            >
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >1901Group- Contracted under Dexian, April 2023 - November 2023</span
-            >
-          </div>
-        </h3>
-        <div class="">
-          Served as an Information Technology Specialist, handled User account
-          administration, Asset Management and Software installation across US
-          Navy Active Directory. Troubleshooted asset, software, and hardware
-          issues and provided remote user assistance as well as remote desktop
-          assistance.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex w-full">
-    <div class="w-1/2 max-w-6xl space-y-2">
-      <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-        <h3
-          class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs"
-        >
-          <div class="badge-container">
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >Enterprise IT Specialist</span
-            >
-            <span
-              class="rounded-full border border-current bg-default px-4 py-1"
-              >1901Group- Contracted under Dexian, April 2023 - November 2023</span
-            >
-          </div>
-        </h3>
-        <div class="">
-          Served as an Information Technology Specialist, handled User account
-          administration, Asset Management and Software installation across US
-          Navy Active Directory. Troubleshooted asset, software, and hardware
-          issues and provided remote user assistance as well as remote desktop
-          assistance.
-        </div>
-      </div>
-    </div>
-  </div> -->
 </ContentSection>

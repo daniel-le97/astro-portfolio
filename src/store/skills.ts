@@ -1,99 +1,102 @@
 import { reactive } from "vue";
 
-export const skillsStore = reactive<{
-  title:string
-  src:string,
-  type?:string}[]>([
+export const skillsStore = reactive<
+  {
+    title: string;
+    src: string;
+    type?: string;
+  }[]
+>([
   {
     title: "HTML5",
     src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
-    type: 'language'
+    type: "language",
   },
   {
     title: "CSS3",
     src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
-    type:'language'
+    type: "language",
   },
   {
     title: "JavaScript ES6",
     src: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
-    type: "language"
+    type: "language",
   },
   {
     title: "C-Sharp",
     src: "https://1.bp.blogspot.com/-U8C6UaajxeA/XV1J6Yo6x2I/AAAAAAAABQo/3v2OEgTGn9ggUqArXtGZpl_6zqbo09nmACLcBGAs/s1600/csharp_logo.png",
-    type: "language"
+    type: "language",
   },
   {
     title: "Node Js",
     src: "https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png",
-    type: "back-end"
+    type: "back-end",
   },
   {
     title: "Vue.js 3",
     src: "https://imgs.search.brave.com/Hsy3vsixUOO8EgH22as2LpgNP6zF5hEx6P-pDoc0n0c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kMzN3/dWJyZmtpMGw2OC5j/bG91ZGZyb250Lm5l/dC83MThjNmU0ODk1/NjI0OTEyMWNmM2Nj/YTFhMjJhOTlmODM3/MmEzZjBkLzVmNjg5/L19udXh0L2ltZy9j/MmE2MDVmLnBuZw",
-    type: "frame-work"
+    type: "frame-work",
   },
   {
     title: "Svelte",
     src: "https://imgs.search.brave.com/AtFnftxXfySR-pIt0LrD64jshxNlrFjMfr9etQbLNAU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9zdmVsdGUtaWNv/bi5zdmc.svg",
-    type: "framework"
+    type: "framework",
   },
   {
     title: "React",
     src: "https://imgs.search.brave.com/qlFAtMUjOJ06EBhykDOXGUrmQ4UM2GdOmNiPAzXjS5w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDkvUmVhY3Rf/bG9nb19sb2dvdHlw/ZV9lbWJsZW0tNzAw/eDYyNi5wbmc",
-    type: "framework"
+    type: "framework",
   },
   {
     title: "Angular",
     src: "https://imgs.search.brave.com/YlS5VuWzZvKwp2RgiANLb12xGWHVnPPV6Id32uidwng/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvYW5n/dWxhci1pY29uLTEt/bG9nby1wbmctdHJh/bnNwYXJlbnQucG5n",
-    type: "framework"
+    type: "framework",
   },
   {
     title: "Next.js",
     src: "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
-    type: 'framework'
+    type: "framework",
   },
   {
     title: "Nuxt.js",
     src: "https://imgs.search.brave.com/ac3WGz-DgM03071K34NEHSDn6LTb8cM2YIrFfa7YAcM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2FlL051eHRfbG9n/by5zdmc.svg",
-    type: 'framework'
+    type: "framework",
   },
   {
     title: "Dotnet Core",
     src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
-    type: 'framework'
+    type: "framework",
   },
   {
     title: "BootStrap",
     src: "https://pluspng.com/img-png/bootstrap-logo-vector-png-bem-with-bootstrap-bootstrap-logo-1024.png",
-    type: 'framework'
+    type: "framework",
   },
   {
     title: "TailWind CSS",
     src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
-    type: 'framework'
+    type: "framework",
   },
   {
     title: "Sass",
     src: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
-    type: "language"
+    type: "language",
   },
   {
     title: "MongoDb",
     src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
-    type: 'database'
+    type: "database",
   },
 
   {
     title: "MySQL",
     src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
-    type: 'database'
+    type: "database",
   },
   {
     title: "PostgreSQL",
     src: "https://cdn.freebiesupply.com/logos/thumbs/2x/postgresql-logo.png",
-    type: 'database'
+    type: "database",
   },
   {
     title: "Prisma.io",
@@ -137,4 +140,4 @@ export const skillsStore = reactive<{
     title: "Trello",
     src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
   },
-])
+]);
