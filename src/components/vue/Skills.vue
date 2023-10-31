@@ -12,12 +12,10 @@ const skills = computed(() => {
     return skillsStore.filter(skill => skill.type === _skills.value)
 })
 
-function getLanguages(){ 
-    _skills.value = 'front-end'
+function setSkills(type: 'all' | 'language' | 'database'){ 
+    _skills.value = type
 }
-function reset(){
-    _skills.value = 'all'
-}
+
 
 </script>
 
@@ -26,10 +24,10 @@ function reset(){
         <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
             <h3 class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs">
                 <div class="badge-container">
-                    <span class="rounded-full border border-current bg-default px-4 py-1"><button @click="getLanguages()"
+                    <span class="rounded-full border border-current bg-default px-4 py-1"><button @click="setSkills('language')"
                         >Programming Languages</button></span>
                     <span class="rounded-full border border-current bg-default px-4 py-1"><button
-                        @click="reset()">Databases</button></span>
+                        @click="setSkills('all')">Databases</button></span>
                     <span class="rounded-full border border-current bg-default px-4 py-1">Frameworks</span>
                     <span class="rounded-full border border-current bg-default px-4 py-1">Technology Platforms</span>
                 </div>
