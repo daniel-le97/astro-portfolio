@@ -59,6 +59,10 @@ export const skillsStore = [
     type: "framework",
   },
   {
+    title: "Tauri",
+    src: "https://imgs.search.brave.com/a79Yiib4IUfOZLCGQO3D5b_FLSyQqK3ibvCTsOw8VeU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL3Rh/dXJpLWFwcHMvdGF1/cmkvSEVBRC9hcHAt/aWNvbi5wbmc",
+  },
+  {
     title: "Dotnet Core",
     src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
     type: "framework",
@@ -140,3 +144,37 @@ export const skillsStore = [
     src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
   },
 ];
+
+export type SkillTitles =
+| "HTML5"
+| "CSS3"
+| "JavaScript ES6"
+| "Typescript"
+| "C-Sharp"
+| "Node Js"
+| "Vue.js 3"
+| "Svelte"
+| "React"
+| "Angular"
+| "Next.js"
+| "Nuxt.js"
+| "Tauri"
+| "Dotnet Core"
+| "BootStrap"
+| "TailWind CSS"
+| "Sass"
+| "MongoDb"
+| "SQL"
+| "MySQL"
+| "PostgreSQL"
+| "Prisma.io"
+| "Auth0"
+| "Auth.js"
+| "Github"
+| "Git"
+| "Postman"
+| "Figma"
+| "FireBase"
+| "PocketBase"
+| "Trello";
+

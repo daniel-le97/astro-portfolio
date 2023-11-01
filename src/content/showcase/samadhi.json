@@ -1,6 +1,7 @@
 {
   "title": "Samadhi",
   "image": "/src/content/showcase/_images/Samadhi.png",
-  "url": "https://samadhiyogaidaho.com/#/",
+  "url": "https://samadhiyogaidaho.com/",
+  "stack": ["vue", "node", "mongo", "pocketbase", "bootstrap"],
   "featured": 1
 }

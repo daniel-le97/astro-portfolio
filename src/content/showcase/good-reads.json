@@ -1,6 +1,7 @@
 {
   "title": "Good Reads",
   "image": "/src/content/showcase/_images/good-reads.png",
-  "url": "https://good-reads.apps.devopportunities.dev/#/",
+  "url": "https://good-reads.apps.devopportunities.dev/",
+  "stack": [ "dotnet","C-Sharp", "MySQL", "vue", "bootstrap"],
   "featured": 5
 }

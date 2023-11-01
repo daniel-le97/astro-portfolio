@@ -7,6 +7,7 @@ const showcase = defineCollection({
       title: z.string().min(1),
       image: image(),
       url: z.string().url(),
+      stack: z.array(z.string()).optional(),
       featured: z.number().min(1).optional(),
     }),
 });

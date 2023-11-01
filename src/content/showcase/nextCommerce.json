@@ -2,5 +2,6 @@
   "title": "Nuxt Commerce",
   "image": "/src/content/showcase/_images/nuxt-commerce.png",
   "url": "https://thedailysun.devopportunities.dev/",
+  "stack": ["nuxt", "prisma", "tailwind"],
   "featured": 3
 }
