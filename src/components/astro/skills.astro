@@ -6,6 +6,8 @@ import type { SkillItem } from "~/types";
 import coolify from "../icons/platforms/coolify.png";
 import Icon from "astro-icon";
 import SkillsCompoent from "~/components/vue/Skills.vue";
+import { skillsStore } from "../../store/skills.ts";
+
 
 const frameworks = [
   {
@@ -155,62 +157,17 @@ let skillsIcons = [
 ---
 
 <ContentSection title="Skills" id="skills">
-  <!-- <div class="w-full max-w-6xl space-y-2">
+  <!-- <SkillsCompoent client:load /> -->
+  <div class="w-full max-w-6xl space-y-2">
     <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-      <h3
-        class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs"
-      >
-        <div class="badge-container">
-          <span class="rounded-full border border-current bg-default px-4 py-1"
-          >Programming Languages</span
-          >
-          <span class="rounded-full border border-current bg-default px-4 py-1"
-            >Database Management</span
-          >
-          <span class="rounded-full border border-current bg-default px-4 py-1"
-            >Frameworks</span
-          >
-          <span class="rounded-full border border-current bg-default px-4 py-1"
-            >Technology Platforms</span
-          >
-        </div>
-      </h3> -->
-
-  <SkillsCompoent client:load />
-  <!-- {
-          skillsIcons.map((item) => (
-            <li>
-              <div class="flex flex-col items-center gap-2">
-                <img src={item.src} alt={item.title} class="h-12" />
-
-                <span>{item.title}</span>
-              </div>
-            </li>
-          ))
-        } -->
-  <!-- </div> -->
-  <!-- </div> -->
-
-  <!-- <div class="w-full max-w-6xl space-y-2">
-    <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-      <h3
-        class="absolute right-4 top-0 -translate-y-1/2 rounded-full border border-current bg-default px-4 py-1 uppercase tracking-tight text-xs"
-      >
-        platforms
-      </h3>
       <ul class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-6">
-        {
-          platforms.map((item) => (
-            <li>
-              <a class="flex flex-col items-center gap-2" href={item.url}>
-                <img src={item.src} alt={item.title} class="h-12  " />
-
-                <span>{item.title}</span>
-              </a>
-            </li>
-          ))
-        }
+        {skillsStore.map(skill => (<li>
+          <div class="flex flex-col items-center gap-2">
+            <img src={skill.src} alt={skill.title} class="h-12" />
+            <span>{skill.title}</span>
+          </div>
+        </li>))}
       </ul>
     </div>
-  </div> -->
+  </div>
 </ContentSection>

@@ -6,7 +6,7 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   site: "https://v2.daniel.devopportunities.dev/",
-  integrations: [tailwind(), vue()],
+  integrations: [tailwind()],
   vite: {
     ssr: {
       external: ["svgo"],

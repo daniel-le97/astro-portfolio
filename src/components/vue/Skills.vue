@@ -20,7 +20,7 @@ function setSkills(type: "all" | "language" | "database") {
 <template>
   <div class="w-full max-w-6xl space-y-2">
     <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
-      <h3
+      <!-- <h3
         class="absolute right-4 top-0 -translate-y-1/2 uppercase tracking-tight text-xs"
       >
         <div class="badge-container">
@@ -39,7 +39,7 @@ function setSkills(type: "all" | "language" | "database") {
             >Technology Platforms</span
           >
         </div>
-      </h3>
+      </h3> -->
       <ul class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-6">
         <li v-for="skill in skills">
           <div class="flex flex-col items-center gap-2">
