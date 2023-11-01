@@ -6,24 +6,24 @@ export interface Props {
   site: CollectionEntry<"showcase">;
 }
 let tech = [
-            {
-                "title": "Svelte",
-                "src": "https://imgs.search.brave.com/AtFnftxXfySR-pIt0LrD64jshxNlrFjMfr9etQbLNAU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9zdmVsdGUtaWNv/bi5zdmc.svg"
-            },
-            {
-                "title": "Tauri",
-                "src": "https://imgs.search.brave.com/a79Yiib4IUfOZLCGQO3D5b_FLSyQqK3ibvCTsOw8VeU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL3Rh/dXJpLWFwcHMvdGF1/cmkvSEVBRC9hcHAt/aWNvbi5wbmc"
-            },
+  {
+    title: "Svelte",
+    src: "https://imgs.search.brave.com/AtFnftxXfySR-pIt0LrD64jshxNlrFjMfr9etQbLNAU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9zdmVsdGUtaWNv/bi5zdmc.svg",
+  },
+  {
+    title: "Tauri",
+    src: "https://imgs.search.brave.com/a79Yiib4IUfOZLCGQO3D5b_FLSyQqK3ibvCTsOw8VeU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL3Rh/dXJpLWFwcHMvdGF1/cmkvSEVBRC9hcHAt/aWNvbi5wbmc",
+  },
 
-            {
-                "title": "TailWind CSS",
-                "src": "https://media.zeemly.com/zeemly/product/tailwind-css.png"
-            },
-            {
-                "title": "SQL",
-                "src": "https://imgs.search.brave.com/pEaNgdvgk50pNK8uwxPf05nM-6uGouAfTsJg61aupF4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9zcWwtaWNv/bi01MTJ4NTA1LXM4/NzhuOWN0LnBuZw"
-            }
-        ]
+  {
+    title: "TailWind CSS",
+    src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
+  },
+  {
+    title: "SQL",
+    src: "https://imgs.search.brave.com/pEaNgdvgk50pNK8uwxPf05nM-6uGouAfTsJg61aupF4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9zcWwtaWNv/bi01MTJ4NTA1LXM4/NzhuOWN0LnBuZw",
+  },
+];
 const { site } = Astro.props;
 
 const widths = [450, 800];
@@ -33,30 +33,28 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
 <a class="group aspect-video hover:!text-default" href={site.data.url}>
   <figure class="relative h-full w-full overflow-hidden rounded-md">
     <Image
-    class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
-    src={site.data.image}
-    widths={widths}
-    sizes={sizes}
-    alt={`A screenshot of ${site.data.url}`}
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src={site.data.image}
+      widths={widths}
+      sizes={sizes}
+      alt={`A screenshot of ${site.data.url}`}
     />
-    
+
     <figcaption class="absolute inset-0">
       <div
-      class="flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100"
+        class="flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100"
       >
-      <h3 class="text-center font-extrabold uppercase text-xl">
-        {site.data.title}
-      </h3>
-      <p class="border border-current px-4 py-2 text-xs">{site.data.url}</p>
-     <div class="flex space-x-4">
-       {tech.map(t=> (<img src={t.src} alt={t.title} class="w-8 h-8"/>)
-      )}
-     </div>
-    </div>
-
-  </figcaption>
-</figure>
-<!-- <div>
+        <h3 class="text-center font-extrabold uppercase text-xl">
+          {site.data.title}
+        </h3>
+        <p class="border border-current px-4 py-2 text-xs">{site.data.url}</p>
+        <div class="flex space-x-4">
+          {tech.map((t) => <img src={t.src} alt={t.title} class="h-8 w-8" />)}
+        </div>
+      </div>
+    </figcaption>
+  </figure>
+  <!-- <div>
   {tech.map(stack => (<img src={stack.src} class="h-full" alt={stack.title}/>))}
 
 </div> -->

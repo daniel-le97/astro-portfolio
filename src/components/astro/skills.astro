@@ -8,7 +8,6 @@ import Icon from "astro-icon";
 import SkillsCompoent from "~/components/vue/Skills.vue";
 import { skillsStore } from "../../store/skills.ts";
 
-
 const frameworks = [
   {
     title: "React",
@@ -161,12 +160,16 @@ let skillsIcons = [
   <div class="w-full max-w-6xl space-y-2">
     <div class="relative border border-default bg-offset px-6 pb-4 pt-8">
       <ul class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-6">
-        {skillsStore.map(skill => (<li>
-          <div class="flex flex-col items-center gap-2">
-            <img src={skill.src} alt={skill.title} class="h-12" />
-            <span>{skill.title}</span>
-          </div>
-        </li>))}
+        {
+          skillsStore.map((skill) => (
+            <li>
+              <div class="flex flex-col items-center gap-2">
+                <img src={skill.src} alt={skill.title} class="h-12" />
+                <span>{skill.title}</span>
+              </div>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </div>

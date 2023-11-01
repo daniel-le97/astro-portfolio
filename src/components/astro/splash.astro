@@ -6,7 +6,7 @@ import HeroImage from "~/components/astro/hero-image.astro";
 import Starfield from "~/components/astro/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
 import { navItems } from "~/store/navItems.ts";
-import astronaut from '~/assets/spacemanFull.mp4'
+import astronaut from "~/assets/spacemanFull.mp4";
 // import type { NavItem } from "~/types";
 
 const widths = [450, 800];
@@ -39,18 +39,17 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 
     <div class="absolute grid h-full place-items-center sm:grid-cols-2">
       <h2
-        class="flex flex-col gap-2  sm:gap-4 sm:self-auto sm:justify-self-end self-center"
+        class="flex flex-col gap-2 self-center sm:gap-4 sm:self-auto sm:justify-self-end"
       >
-        <div
-          class="gradient-text text-center font-extrabold text-8xl"
-        >
+        <div class="gradient-text text-center font-extrabold text-8xl">
           Daniel Le
           <br /> Software Engineer.
         </div>
       </h2>
 
       <div class="absolute bottom-4 right-4 items-center gap-6">
-        <nav class="block sm:hidden"> <!-- Hide on small screens -->
+        <nav class="block sm:hidden">
+          <!-- Hide on small screens -->
           <ul class="flex items-center gap-6">
             {
               navItems.map(({ title, url }) => (
@@ -82,7 +81,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 </section>
 
 <script>
-    import MicroModal from "micromodal";
+  import MicroModal from "micromodal";
   import invariant from "tiny-invariant";
 
   const menuModalId = "menu-modal";
@@ -108,7 +107,6 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 
   openNavButton.addEventListener("click", openMenu);
   closeNavButton.addEventListener("click", closeMenu);
-
 
   menu.addEventListener("click", (event) => {
     if ((event.target as HTMLElement).tagName === "A") {
