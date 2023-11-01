@@ -1,12 +1,6 @@
-import { reactive } from "vue";
 
-export const skillsStore = reactive<
-  {
-    title: string;
-    src: string;
-    type?: string;
-  }[]
->([
+
+export const skillsStore = [
   {
     title: "HTML5",
     src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
@@ -140,4 +134,4 @@ export const skillsStore = reactive<
     title: "Trello",
     src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
   },
-]);
+];
