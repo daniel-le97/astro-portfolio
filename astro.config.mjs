@@ -7,11 +7,11 @@ import node from "@astrojs/node";
 export default defineConfig({
   site: "https://v2.daniel.devopportunities.dev/",
   integrations: [tailwind()],
-  // vite: {
-  //   ssr: {
-  //     external: ["svgo"]
-  //   }
-  // },
+  vite: {
+    ssr: {
+      external: ["svgo"]
+    }
+  },
   output: "server",
   adapter: node({
     mode: "standalone"
