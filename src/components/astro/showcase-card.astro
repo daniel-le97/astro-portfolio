@@ -48,7 +48,12 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
         {site.data.title}
       </h3>
       <p class="border border-current px-4 py-2 text-xs">{site.data.url}</p>
+     <div class="flex space-x-4">
+       {tech.map(t=> (<img src={t.src} alt={t.title} class="w-8 h-8"/>)
+      )}
+     </div>
     </div>
+
   </figcaption>
 </figure>
 <!-- <div>
