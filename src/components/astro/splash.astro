@@ -6,6 +6,7 @@ import HeroImage from "~/components/astro/hero-image.astro";
 import Starfield from "~/components/astro/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
 import { navItems } from "~/store/navItems.ts";
+import astronaut from '~/assets/spacemanFull.mp4'
 // import type { NavItem } from "~/types";
 
 const widths = [450, 800];
@@ -30,7 +31,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
       playsinline
       class="object-fit"
     >
-      <source src="../../src/assets/spacemanFull.mp4" type="video/mp4" />
+      <source src={astronaut} type="video/mp4" />
       <!-- Add additional sources here for other formats, e.g., WebM, Ogg -->
     </video>
 
