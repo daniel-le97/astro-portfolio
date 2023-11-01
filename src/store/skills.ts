@@ -85,7 +85,10 @@ export const skillsStore = [
     src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
     type: "database",
   },
-
+  {
+    title:"SQL",
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixhost.icu%2Favaxhome%2F2c%2F18%2F0059182c.jpg&f=1&nofb=1&ipt=754a16fdf499cb4e4dc3d236d19f2544bf2a1ab26e1e2b631d4b8256240097d5&ipo=images"
+  },
   {
     title: "MySQL",
     src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
