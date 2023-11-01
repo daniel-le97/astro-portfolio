@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 FROM base AS prod-deps
-RUN bun install --production
+RUN bun install
 
 FROM base AS build-deps
 RUN bun install
