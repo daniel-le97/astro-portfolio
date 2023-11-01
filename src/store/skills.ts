@@ -17,6 +17,10 @@ export const skillsStore = [
     type: "language",
   },
   {
+    title: "Typescript",
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F4c%2FTypescript_logo_2020.svg%2F1200px-Typescript_logo_2020.svg.png&f=1&nofb=1&ipt=50a3ce98c153a5a400ecbc13cde20092f3c656dc0611984698adb5cd426dbf3e&ipo=images"
+  },
+  {
     title: "C-Sharp",
     src: "https://1.bp.blogspot.com/-U8C6UaajxeA/XV1J6Yo6x2I/AAAAAAAABQo/3v2OEgTGn9ggUqArXtGZpl_6zqbo09nmACLcBGAs/s1600/csharp_logo.png",
     type: "language",
