@@ -5,7 +5,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-moon-landing.netlify.app/",
+  site: "https://v2.daniel.devopportunities.dev/",
   integrations: [tailwind(), vue()],
   vite: {
     ssr: {
