@@ -2,6 +2,6 @@
   "title": "Keepr",
   "image": "/src/content/showcase/_images/keepr.png",
   "url": "https://keeper.dan.devopportunities.dev/",
-  "stack": ["dotnet","C-Sharp", "MySQL", "vue", "bootstrap"],
+  "stack": ["dotnet", "C-Sharp", "MySQL", "vue", "bootstrap"],
   "featured": 4
 }

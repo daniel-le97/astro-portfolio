@@ -27,18 +27,20 @@ let tech = [
 ];
 const { site } = Astro.props;
 const getStack = () => {
-  let _stack = []
-if (!site.data.stack) {
-  return []
-}
+  let _stack = [];
+  if (!site.data.stack) {
+    return [];
+  }
   for (const stack of site.data.stack) {
-    const found = skillsStore.find(skill => skill.title.toLowerCase().includes(stack.toLowerCase()))
+    const found = skillsStore.find((skill) =>
+      skill.title.toLowerCase().includes(stack.toLowerCase()),
+    );
     if (found) {
-      _stack.push(found)
+      _stack.push(found);
     }
   }
-  return _stack
-}
+  return _stack;
+};
 
 const widths = [450, 800];
 const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
@@ -63,7 +65,11 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
         </h3>
         <p class="border border-current px-4 py-2 text-xs">{site.data.url}</p>
         <div class="flex space-x-4">
-          {getStack().map((t) => <img src={t.src} alt={t.title} class="h-8 w-8" />)}
+          {
+            getStack().map((t) => (
+              <img src={t.src} alt={t.title} class="h-8 w-8" />
+            ))
+          }
         </div>
       </div>
     </figcaption>
