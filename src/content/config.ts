@@ -27,6 +27,8 @@ const posts = defineCollection({
   })
 });
 
+
+
 export const collections = {
   showcase,
   posts,
