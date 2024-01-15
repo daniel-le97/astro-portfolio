@@ -31,7 +31,7 @@
 | `npm run format`       | Format code with [Prettier](https://prettier.io/) |
 | `npm run clean`        | Remove `node_modules` and build output            |
 
-## Credits
+## Credits =)
 
 - astronaut image
   - source: https://github.com/withastro/astro-og-image; note: this repo is not available anymore
