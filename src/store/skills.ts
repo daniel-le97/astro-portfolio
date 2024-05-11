@@ -25,7 +25,7 @@ export const skillsStore = [
   },
   {
     title: "Node Js",
-    src: "https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png",
     type: "back-end",
   },
   {
@@ -98,16 +98,8 @@ export const skillsStore = [
     type: "database",
   },
   {
-    title: "Prisma.io",
-    src: "https://imgs.search.brave.com/KhQAV89DalGsyHLIk36WzppNhJCg02NbIehcQjuSTeU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/cy52ZXJ5aWNvbi5j/b20vcG5nL28vYnVz/aW5lc3MvdnNjb2Rl/LXByb2dyYW0taXRl/bS1pY29uL3ByaXNt/YS5wbmc",
-  },
-  {
-    title: "Auth0",
-    src: "https://www.pngrepo.com/png/349297/512/auth0.png",
-  },
-  {
-    title: "Auth.js",
-    src: "https://authjs.dev/img/logo/logo-sm.webp",
+    title: "0Auth 2.0",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oauth_logo.svg/1021px-Oauth_logo.svg.png",
   },
 
   {
@@ -120,8 +112,12 @@ export const skillsStore = [
     src: "https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png",
   },
   {
-    title: "PocketBase",
-    src: "https://seeklogo.com/images/P/pocketbase-logo-CA73994F09-seeklogo.com.png",
+    title: "python",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
+  },
+  {
+    title: "go",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
   },
 ];
 

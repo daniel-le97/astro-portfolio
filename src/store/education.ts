@@ -1,6 +1,6 @@
 export const education = [
   {
-    date: "APRIL - NOV 2023",
+    date: "APRIL 2023 - CURRENT",
     title: "1901Group",
     description:
       "Served as an Information Technology Specialist, handled User account administration, Asset Management and Software installation across US Navy Active Directory. Troubleshooted asset, software, and hardware issues and provided remote user assistance as well as remote desktop assistance.",
@@ -26,7 +26,7 @@ export const education = [
     date: "AUG - NOV 2022",
     title: "Boise CodeWorks",
     description:
-      "Fullstack software development bootcamp that teaches CSS, HTML, Javascript, C#, dotnet, building and intergrating REST APIs",
+      "Fullstack software development bootcamp that teaches building Spa's, API's, and Fullstack applications, using industry standard technologies.",
     link: "https://boisecodeworks.com/",
     tech: [
       "CSS",
